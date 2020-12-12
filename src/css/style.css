@@ -1,5 +1,9 @@
 /* header e menu  */
 
+:root {
+    --bgcolor_Principal: #fec63e;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,6 +11,49 @@ body {
 p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
+}
+
+.subTitulos {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sub-white {
+    color: #fff;
+    padding: 20px 0;
+}
+
+.subTitulos::after {
+    content: "";
+    background: #000;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 8px auto;
+}
+
+.sub-white::after {
+    content: "";
+    background: #fff;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 8px auto;
+}
+
+.portfolio .subTitulos {
+    color: var(--bgcolor_Principal);
+    padding: 20px 0;
+}
+
+.portfolio .subTitulos::after {
+    content: "";
+    background: var(--bgcolor_Principal);
 }
 
 .btn {
@@ -27,12 +74,18 @@ p {
     border-color: #fff;
 }
 
+.btn-black:hover {
+    color: #000;
+    border-color: #000;
+}
+
 .header {
     background-color: #fec63e;
     padding: 15px 0;
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .header_menu {
@@ -105,4 +158,78 @@ p {
 
 .introducao .btn {
     margin-top: 20px;
+}
+
+
+/* produtos */
+
+.produtos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.produtos_lista {
+    margin-top: 40px
+}
+
+.produtos_lista li {
+    background-color: var(--bgcolor_Principal);
+}
+
+.produtos_lista h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+
+.produtos_lista h3::after {
+    content: "";
+    background: #fff;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 3px auto;
+}
+
+.produtos_icones {
+    background-color: #000;
+}
+
+.produtos_lista p {
+    padding: 10px 20px 20px 20px;
+}
+
+.call {
+    padding-top: 30px;
+    text-align: center;
+    clear: both;
+}
+
+.call p {
+    margin-bottom: 20px;
+}
+
+
+/* portfolio */
+
+.portfolio {
+    background-color: #000;
+    clear: both;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.portfolio .call p {
+    color: #fff;
+}
+
+.portfolio img:hover {
+    opacity: 0.7;
+}
+
+.portfolio_list:last-child {
+    padding-top: 20px
 }
