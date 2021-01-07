@@ -357,3 +357,9 @@ img {
 .footer_social ul li a:hover img {
     filter: brightness(0) invert(1)
 }
+
+.copy {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--bgcolor_Principal);
+}
