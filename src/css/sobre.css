@@ -28,10 +28,42 @@
     color: #fff;
 }
 
-.historia {
-    width: 100%;
-    margin-top: 92px;
-    height: 380px;
-    text-align: left;
-    padding-top: 80px;
+.foto-equipe {
+    padding-top: 40px;
+}
+
+.missao_sobre {
+    padding-top: 60px;
+}
+
+.missao_sobre p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 40px;
+}
+
+.missao_sobre ul li {
+    font-size: 18px;
+    line-height: 15px;
+    margin-bottom: 1em;
+    padding-right: 20px;
+}
+
+.subtitulo-interno {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 30px;
+}
+
+.subtitulo-interno::after {
+    content: "";
+    background: #000;
+    width: 60px;
+    height: 3px;
+    margin: 6px 0 10px;
+    display: block;
 }

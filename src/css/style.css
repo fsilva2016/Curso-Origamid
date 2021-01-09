@@ -41,6 +41,10 @@ img {
     margin: 8px auto;
 }
 
+.header_menu a.ativo {
+    color: #fff;
+}
+
 .sub-white::after {
     content: "";
     background: #fff;
